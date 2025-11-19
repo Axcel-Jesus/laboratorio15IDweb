@@ -1,1 +1,6 @@
-//Seleccionar un párrafo y reemplázalo por un nuevo elemento <div> con texto “Párrafo reemplazado”
+const parrafo = document.querySelector('p');
+const nuevoElemento = document.createElement('div');
+nuevoElemento.textContent = 'Párrafo reemplazado';
+setTimeout(() => {
+    parrafo.replaceWith(nuevoElemento);
+}, 1000);
