@@ -29,8 +29,9 @@ setTimeout(() => {
 setTimeout(() => {
     section.appendChild(ul);
 }, 3000);
+setTimeout(() => {
 if(section.contains(h2)) {
-    setTimeout(() => {
         section.removeChild(h2);
-    }, 4000);
+    
 }
+}, 4000);
